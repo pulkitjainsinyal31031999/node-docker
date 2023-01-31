@@ -69,7 +69,7 @@ app.use(
 );
 
 app.get("/", (req, res, next) => {
-  console.log("hi");
+  console.log("hi!!");
 });
 
 app.use("/api/v1/posts", postRouter);
