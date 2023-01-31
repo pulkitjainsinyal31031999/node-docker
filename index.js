@@ -69,7 +69,9 @@ app.use(
 );
 
 app.get("/", (req, res, next) => {
-  console.log("hi!!");
+  res.status(200).json({
+    message: "success",
+  });
 });
 
 app.use("/api/v1/posts", postRouter);
